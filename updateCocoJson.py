@@ -3,11 +3,13 @@ import os
 
 #####################################################################################################################
 # README                                                                                               				#
+# updateCocoJson.py updates the annotations from old json file with new annotations from yolo format                #
+# output: a new json file with new annotations                                                                      #
 #####################################################################################################################
 
-YOLO_PATH = '/media/deep/Data/ZG/test/yolo bbox'
-JSON_PATH = '/media/deep/Data/ZG/test/instances_train.json'
-OUTPUT_FILE_NAME = 'new_instances_train.json'
+YOLO_PATH = 'path/to/yolo bbox'
+JSON_PATH = '/path/to/instances.json'
+OUTPUT_FILE_NAME = 'new_instances.json'
 THRESHOLD = 0.1
 
 with open(JSON_PATH) as jsonFile:
